@@ -8,6 +8,7 @@ from flask_cors import CORS
 import os
 from tensorflow.keras.models import load_model
 
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
