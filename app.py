@@ -20,9 +20,7 @@ model = load_model(model_path)
 # Define class names
 class_names = ["glioma", "meningioma", "notumor", "pituitary"]
 
-@app.route("/", methods=["POST"])
-def home():
-    return "POST request received"
+
 
 @app.route("/")
 def home():
