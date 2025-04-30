@@ -14,11 +14,11 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Load the pre-trained model
-model_path = os.path.join(os.path.dirname(__file__), "BrainTumorAIFinalLarge.keras")
+model_path = os.path.join(os.path.dirname(__file__), "BrainTumorAIGood.keras")
 model = load_model(model_path)
 
 # Define class names
-class_names = ["glioma", "meningioma", "notumor", "pituitary"]
+class_names = ['glioma', 'meningioma', 'notumor', 'pituitary']
 
 
 
